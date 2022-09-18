@@ -13,5 +13,10 @@
     <strong>Description:</strong>
     <%= product.description %>
   </p>
+  
+  <p>
+    <strong>PAYMENT:</strong>
+    <%= button_to "Buy now", checkout_create_path, params: {id: product.id}, remote: true %>
+  </p>
 
 </div>

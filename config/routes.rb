@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-    registrations: 'registrations'
-  }
+  devise_for :users
 
   resources :products
   post "checkout/create", to: "checkout#create"
